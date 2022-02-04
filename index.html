@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 
 <html>
     <head>
@@ -7,11 +7,16 @@
         <title>Rock-Paper-Scizor</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-    
+    <div class="selection">
+        <button class="buttn" id="btn-rock" onclick="playerPlay('btn-rock')" value="rock"> <img src="https://www.kindpng.com/picc/m/502-5025794_rock-paper-scissors-clipart-hd-png-download.png"> </button>
+        <button class="buttn" id="btn-paper" onclick="playerPlay('btn-paper')" value="paper"> <img src="https://www.pngitem.com/pimgs/m/266-2667252_transparent-rock-paper-scissors-clipart-rock-paper-scissors.png">></button>
+        <button class="buttn" id="btn-scizor" onclick="playerPlay('btn-scizor')" value="scizor"> <img src="https://www.nicepng.com/png/detail/6-61708_rock-rock-paper-scissors-clipart.png"></button>
+    </div>
         
+        <h4 id="result">  </h4>
         <script src="script.js" async defer></script>
     </body>
 </html>
