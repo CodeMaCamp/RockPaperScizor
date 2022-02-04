@@ -67,28 +67,32 @@ function game() {
     }
     if (round(plySel, comSel) == "You Win") {
       score++;
-      document.getElementById("result").innerHTML = "Computer played " + comSel.toUpperCase() + "You played " + plySel.toUpperCase() + " therefore You Won this round";
+      document.getElementById("result").innerHTML = "Computer played .... " + comSel.toUpperCase() + "<br> You played .... " + plySel.toUpperCase() + "<br> Therefore You Won this round";
     }
     if (round(plySel, comSel) == "You Lose") {
       score--;
-      document.getElementById("result").innerHTML = "Computer played " + comSel.toUpperCase() + " You played " + plySel.toUpperCase() + " therefore You lost this round";
+      document.getElementById("result").innerHTML = "Computer played .... " + comSel.toUpperCase() + "<br> You played .... " + plySel.toUpperCase() + "<br> Therefore You lost this round";
     }if(round(plySel,comSel) == "Tie"){
-      document.getElementById("result").innerHTML = "Computer played " + comSel.toUpperCase() + " You played " + plySel.toUpperCase() + " therefore You Tied this round";
+      document.getElementById("result").innerHTML = "Computer played .... " + comSel.toUpperCase() + "<br> You played .... " + plySel.toUpperCase() + "<br> Therefore You Tied this round";
     }
     count++;
   } else if(count==5) {
     if (score > 0) {
       document.getElementById("result").innerHTML = "YOU WON THE GAME!";
+      document.getElementById("reldGame").innerHTML = "<button id='gm-btn' onclick='location.reload()'> Reload Game</button>"
       score=0;
       count=0;
       return;
     } else if (score < 0) {
       document.getElementById("result").innerHTML = "YOU LOST THE GAME!";
+      document.getElementById("reldGame").innerHTML = "<button id='gm-btn' onclick='location.reload()'> Reload Game</button>"
       score=0;
       count=0;
       return;
     } else {
       document.getElementById("result").innerHTML = "YOU TIED THE GAME!";
+      document.getElementById("reldGame").innerHTML = "<button id='gm-btn' onclick='location.reload()'> Reload Game</button>"
+      //document.body.style.backgroundImage:URL('https://images.saatchiart.com/saatchi/1028376/art/5930389/5000183-HSC00001-7.jpg');
       score=0;
       count=0;
       return;
