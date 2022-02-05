@@ -79,19 +79,19 @@ function game() {
   } else if(count==5) {
     if (score > 0) {
       document.getElementById("result").innerHTML = "YOU WON THE GAME!";
-      document.getElementById("reldGame").innerHTML = "<button id='gm-btn' onclick='location.reload()'> Reload Game</button>"
+      document.getElementById("reldGame").innerHTML = "<button id='gm-btn' onclick='location.reload()'>YOU WON THE GAME ! <br> Reload Game</button>"
       score=0;
       count=0;
       return;
     } else if (score < 0) {
       document.getElementById("result").innerHTML = "YOU LOST THE GAME!";
-      document.getElementById("reldGame").innerHTML = "<button id='gm-btn' onclick='location.reload()'> Reload Game</button>"
+      document.getElementById("reldGame").innerHTML = "<button id='gm-btn' onclick='location.reload()'> YOU LOST THE GAME ! <br> Reload Game</button>"
       score=0;
       count=0;
       return;
     } else {
       document.getElementById("result").innerHTML = "YOU TIED THE GAME!";
-      document.getElementById("reldGame").innerHTML = "<button id='gm-btn' onclick='location.reload()'> Reload Game</button>"
+      document.getElementById("reldGame").innerHTML = "<button id='gm-btn' onclick='location.reload()'> YOU TIED THE GAME ! <br> Reload Game</button>"
       //document.body.style.backgroundImage:URL('https://images.saatchiart.com/saatchi/1028376/art/5930389/5000183-HSC00001-7.jpg');
       score=0;
       count=0;
